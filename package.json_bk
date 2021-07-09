@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build"     : "npm run build:sass && npm run build:ts",
-    "build:sass": "sass input.scss output.css",
-    "build:ts"  : "tsc main.ts",
+    "build": "webpack",
+    "sass:version": "sass --version",
     "watch"     : "npm run watch:sass & npm run watch:ts",
     "watch:sass": "sass --watch input.scss output.css",
-    "watch:ts"  : "tsc -w main.ts"
+    "watch:ts"  : "tsc -w main.ts",
+    "init:ts"  : "tsc --init"
 
   },
   "keywords": [],
